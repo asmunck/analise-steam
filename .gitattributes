@@ -1,0 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.csv filter=lfs diff=lfs merge=lfs -text
+steam_games.csv filter=lfs diff=lfs merge=lfs -text
