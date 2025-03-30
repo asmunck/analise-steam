@@ -1,6 +1,6 @@
 import unittest
-from analisador_jogos import AnalisadorJogos
-from dados_jogos import ErroDadosJogos
+from src.fase1.analisador_jogos import AnalisadorJogos
+from src.fase1.dados_jogos import ErroDadosJogos
 
 class TesteAnalisadorJogos(unittest.TestCase):
     """Testes para a classe AnalisadorJogos."""

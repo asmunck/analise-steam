@@ -1,4 +1,4 @@
-from analisador_jogos import AnalisadorJogos
+from src.fase1.analisador_jogos import AnalisadorJogos
 
 def main():
     """

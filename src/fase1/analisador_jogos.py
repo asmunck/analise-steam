@@ -1,4 +1,4 @@
-from dados_jogos import DadosJogos, ErroDadosJogos, Jogo
+from src.fase1.dados_jogos import DadosJogos, ErroDadosJogos, Jogo
 from typing import Dict, List, Tuple, Union, Optional, Any
 
 
