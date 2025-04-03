@@ -1,6 +1,6 @@
 # Análise de Jogos da Steam
 
-Projeto de análise de dados de jogos da plataforma Steam desenvolvido para a disciplina de Programação para Dados da PUC.
+Projeto de análise de dados de jogos da plataforma Steam.
 
 ## Descrição
 
