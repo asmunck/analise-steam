@@ -1,52 +1,73 @@
-# analise-steam
+# Análise de Jogos da Steam
 
 Projeto de análise de dados de jogos da plataforma Steam desenvolvido para a disciplina de Programação para Dados da PUC.
 
 ## Descrição
 
-Este projeto realiza uma análise dos dados de jogos disponíveis na Steam, explorando diferentes aspectos do mercado de jogos digitais como distribuição de preços, anos de lançamento e categorização por gêneros. A implementação foi feita utilizando apenas bibliotecas básicas do Python, com foco em programação orientada a objetos e manipulação eficiente de dados.
+Este projeto realiza uma análise abrangente dos dados de jogos disponíveis na Steam, explorando diferentes aspectos do mercado de jogos digitais. Investigamos distribuição de preços, tendências de lançamento, categorização por gêneros, avaliações de usuários e suporte a diferentes sistemas operacionais. A análise foi dividida em fases incrementais, com foco em extração de insights valiosos para desenvolvedores e empresas do setor.
 
 ## Estrutura do Projeto
 
-- dados_jogos.py: Classes para carregamento e manipulação dos dados de jogos
-- analisador_jogos.py: Implementação das análises e processamento dos dados
-- criar_amostra.py: Script para criar uma amostra aleatória do conjunto de dados
-- teste_analisador_jogos.py: Testes unitários para validar as funcionalidades
-- analise_jogos.ipynb: Notebook Jupyter com demonstração das análises
-- steam_games.csv: Conjunto de dados completo (gerenciado com Git LFS)
-- amostra_jogos.csv: Amostra reduzida para testes e validação
+### Dados
+- `data/raw/steam_games.csv`: Conjunto de dados original
+- `data/processed/steam_games_processed.csv`: Dados processados e limpos para análise
 
-## Funcionalidades
+### Notebooks de Análise
+- `notebooks/fase1/analise_jogos-1.ipynb`: Análises iniciais e exploração de dados
+- `notebooks/fase2/fun-corp.ipynb`: Análises avançadas para a empresa Fun Corp, incluindo:
+    - Jogos mais bem avaliados pelo Metacritic
+    - Estatísticas de jogos RPG
+    - Análise de suporte a sistemas operacionais
+    - Tendências de preços e avaliações
+
+### Códigos-fonte
+- `src/fase1/`: Scripts para processamento inicial dos dados
+- `src/fase2/`: Scripts para análises avançadas
+    - `preprocessamento.py`: Funções para limpeza e transformação dos dados
+    - `visualizacao.py`: Funções para criação de visualizações personalizadas
+
+## Funcionalidades e Insights
 
 O projeto implementa análises como:
 
-1. Percentual de jogos gratuitos versus pagos na plataforma
-2. Identificação do ano com maior número de lançamentos
-3. Análise de gêneros de jogos por faixa de preço
-4. Estatísticas de preço por gênero
+1. Identificação dos jogos mais bem avaliados pela crítica especializada
+2. Percentual de jogos que possuem suporte para cada sistema operacional
+3. Análise estatística de jogos de role-playing (DLCs, avaliações, material de demonstração)
+4. Evolução anual do suporte a Linux na plataforma
+5. Correlação entre preço e avaliações positivas
+6. Identificação dos gêneros mais populares na plataforma
+7. Análise de publicadoras com maior número de títulos e sua popularidade
 
 ## Como Executar
 
-Para criar uma amostra do conjunto de dados:
+Para explorar as análises, você pode abrir qualquer um dos notebooks Jupyter:
+
 ```
-python criar_amostra.py
+jupyter notebook notebooks/fase2/fun-corp.ipynb
 ```
 
-Para executar os testes:
-```
-python -m unittest teste_analisador_jogos.py
-```
+Para reprocessar os dados a partir do arquivo original:
 
-Para explorar as análises, abra o notebook Jupyter:
 ```
-jupyter notebook analise_jogos.ipynb
+python -m src.fase2.preprocessamento
 ```
 
 ## Requisitos
 
 - Python 3.6+
-- Bibliotecas padrão do Python (csv, random, datetime)
-- Jupyter Notebook (opcional, para explorar o notebook de análise)
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- jupyter notebook
+
+## Visualizações
+
+O projeto inclui diversas visualizações, como:
+- Gráficos comparativos de sistemas operacionais
+- Evolução temporal do suporte a Linux
+- Distribuição de preços por gênero
+- Correlação entre preço e avaliações positivas
 
 ## Autores
 
